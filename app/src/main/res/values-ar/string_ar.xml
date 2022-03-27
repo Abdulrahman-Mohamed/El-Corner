@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_signIn">تسجيل الدخول</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="password">كلمه المرور</string>
+    <string name="title_signUp">الاشتراك</string>
+    <string name="regeteration_msg">لا تملك حساب؟</string>
+    <string name="signIn_msg"> تمتلك حساب؟</string>
+    <string name="sign_In" >تسجيل الدخول</string>
+
+    <string name="sign_up" >سجل</string>
+
+</resources>
