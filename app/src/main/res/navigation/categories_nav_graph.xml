@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/categories_nav_graph"
+    app:startDestination="@id/categoriesItems">
+
+    <fragment
+        android:id="@+id/categoriesItems"
+        android:name="com.abdullrahman.ecommerce.presentation.categories.CategoriesItems"
+        android:label="fragment_categories_items"
+        tools:layout="@layout/fragment_categories_items" />
+</navigation>

@@ -8,10 +8,37 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="regeteration_msg">Don\'t have an account?</string>
-    <string name="sign_up" >Sign Up</string>
-    <string name="sign_In" >Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_In">Sign In</string>
+    <string name="deliver_to">Deliver to</string>
 
     <string name="signIn_msg">Do you have an account?</string>
     <string name="forget_pass">Forgot Password?</string>
-
+    <string name="what_would_you_like_to_order">What would you like to order</string>
+    <string name="find_for_food_or_restaurant">Find for food or restaurant...</string>
+    <string name="featured_restaurants">Featured restaurants</string>
+    <string name="popular_items">Popular items</string>
+    <string name="helps_amp_faqs"><![CDATA[Helps & FAQs]]></string>
+    <string name="contact_us">Contact Us</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_orders">My Orders</string>
+    <string name="more_details">More Details</string>
+    <string name="search">Search</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="choice_of_add_on">Choice of Add On</string>
+    <string name="see_reviews">See Reviews</string>
+    <string name="featured_items">Featured Items</string>
+    <string name="on_sale">On Sale</string>
+    <string name="settings">Settings</string>
+    <string name="languages">Languages</string>
+    <string name="country">Country</string>
+    <string name="personal_information">PERSONAL INFORMATION</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="add_address">Add Address</string>
+    <string name="edit">Edit</string>
+    <string name="load_more">Load More</string>
+    <string name="search_for_products">Search for products</string>
 </resources>

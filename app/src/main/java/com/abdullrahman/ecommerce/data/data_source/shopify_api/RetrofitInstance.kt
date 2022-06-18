@@ -14,14 +14,15 @@ class RetrofitInstance {
         var gson = GsonBuilder()
             .setLenient()
             .create()
+
         val client =OkHttpClient.Builder().
                 addInterceptor(
                     ShopifyInterceptor(SHOPIFY_USER_NAME, SOPIFY_PASSWORD_KEY)
                 ).build()
+
         Retrofit.Builder()
             .baseUrl(URL)
             .addConverterFactory(GsonConverterFactory.create(gson))
-            .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()
 

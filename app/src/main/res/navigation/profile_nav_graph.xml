@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_nav_graph"
+    app:startDestination="@id/profileSignedInFragment">
+
+    <fragment
+        android:id="@+id/profileSignedInFragment"
+        android:name="com.abdullrahman.ecommerce.presentation.profile.ProfileSignedInFragment"
+        android:label="fragment_profile_signed_in"
+        tools:layout="@layout/fragment_profile_signed_in" >
+        <action
+            android:id="@+id/action_profileSignedInFragment_to_profileSignedOutFragment"
+            app:destination="@id/profileSignedOutFragment" />
+        <action
+            android:id="@+id/action_profileSignedInFragment_to_profileInfoFragment"
+            app:destination="@id/profileInfoFragment" />
+        <action
+            android:id="@+id/action_profileSignedInFragment_to_addressesFragment"
+            app:destination="@id/addressesFragment" />
+        <action
+            android:id="@+id/action_profileSignedInFragment_to_wishListFragment"
+            app:destination="@id/wishListFragment"
+            app:popUpTo="@id/profileSignedInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileSignedOutFragment"
+        android:name="com.abdullrahman.ecommerce.presentation.profile.ProfileSignedOutFragment"
+        android:label="fragment_profile_signed_out"
+        tools:layout="@layout/fragment_profile_signed_out" >
+        <action
+            android:id="@+id/action_profileSignedOutFragment_to_profileSignedInFragment"
+            app:destination="@id/profileSignedInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addressesFragment"
+        android:name="com.abdullrahman.ecommerce.presentation.profile.AddressesFragment"
+        android:label="AddressesFragment" >
+        <action
+            android:id="@+id/action_addressesFragment_to_profileSignedInFragment"
+            app:destination="@id/profileSignedInFragment"
+            app:popUpTo="@id/profileSignedInFragment" />
+        <action
+            android:id="@+id/action_addressesFragment_to_addAddressesFragment"
+            app:destination="@id/addAddressesFragment"
+            app:launchSingleTop="false" />
+        <action
+            android:id="@+id/action_addressesFragment_to_updateAddressFragment"
+            app:destination="@id/updateAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileInfoFragment"
+        android:name="com.abdullrahman.ecommerce.presentation.profile.ProfileInfoFragment"
+        android:label="ProfileInfoFragment" >
+        <action
+            android:id="@+id/action_profileInfoFragment_to_profileSignedInFragment"
+            app:destination="@id/profileSignedInFragment"
+            app:popUpTo="@id/profileSignedInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAddressesFragment"
+        android:name="com.abdullrahman.ecommerce.presentation.profile.AddAddressesFragment"
+        android:label="fragment_add_addresses"
+        tools:layout="@layout/fragment_add_addresses" >
+        <action
+            android:id="@+id/action_addAddressesFragment_to_addressesFragment"
+            app:destination="@id/addressesFragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/addressesFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_addAddressesFragment_to_profileSignedInFragment"
+            app:destination="@id/profileSignedInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateAddressFragment"
+        android:name="com.abdullrahman.ecommerce.presentation.profile.UpdateAddressFragment"
+        android:label="UpdateAddressFragment" >
+        <action
+            android:id="@+id/action_updateAddressFragment_to_profileSignedInFragment"
+            app:destination="@id/profileSignedInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wishListFragment"
+        android:name="com.abdullrahman.ecommerce.presentation.profile.wishList.WishListFragment"
+        android:label="WishListFragment" >
+        <action
+            android:id="@+id/action_wishListFragment_to_profileSignedInFragment"
+            app:destination="@id/profileSignedInFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homePageFragment2"
+        android:title="explore"
+        android:icon="@drawable/home_page_selector"
+        />
+    <item
+        android:id="@+id/categories2"
+        android:title="Categories"
+        android:icon="@drawable/categories_page_selector"/>
+
+    <item
+        android:title="cart"
+        android:icon="@drawable/cart_page_selector"
+        />
+   <item
+       android:id="@+id/profileFragment2"
+       android:title="profile"
+       android:icon="@drawable/profile_page_selector"/>
+</menu>

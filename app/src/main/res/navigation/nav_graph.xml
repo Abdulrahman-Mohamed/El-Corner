@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/signInFragment">
 
@@ -11,17 +12,95 @@
         <action
             android:id="@+id/action_signInFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_buttomNavFragment"
+            app:destination="@id/buttomNavFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_buttomNavFragment2"
+            app:destination="@id/buttomNavFragment"
+            />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.abdullrahman.ecommerce.presentation.auth.SignUpFragment"
-        android:label="Register" />
+        android:label="Register" >
+        <action
+            android:id="@+id/action_signUpFragment_to_addAddressFragment"
+            app:destination="@id/addAddressFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
     <fragment
         android:id="@+id/viewPagerFragment"
-        android:name="com.abdullrahman.ecommerce.viewPager.ViewPagerFragment"
+        android:name="com.abdullrahman.ecommerce.presentation.viewPager.ViewPagerFragment"
         android:label="ViewPagerFragment" >
         <action
             android:id="@+id/action_viewPagerFragment_to_signInFragment"
             app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAddressFragment"
+        android:name="com.abdullrahman.ecommerce.presentation.auth.AddAddressFragment"
+        android:label="AddAddressFragment" >
+        <action
+            android:id="@+id/action_addAddressFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buttomNavFragment"
+        android:name="com.abdullrahman.ecommerce.presentation.bottomNav.ButtomNavFragment"
+        android:label="fragment_buttom_nav"
+        tools:layout="@layout/fragment_buttom_nav" >
+        <action
+            android:id="@+id/action_buttomNavFragment_to_productItemFragment"
+            app:destination="@id/productItemFragment"
+            app:popUpTo="@id/buttomNavFragment"
+            app:restoreState="false"
+            app:popUpToSaveState="false"
+            />
+        <action
+            android:id="@+id/action_buttomNavFragment_to_productItemsListFragment"
+            app:destination="@id/productItemsListFragment"
+            app:popUpTo="@id/buttomNavFragment" />
+        <action
+            android:id="@+id/action_buttomNavFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_buttomNavFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_buttomNavFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:popUpTo="@id/buttomNavFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productItemFragment"
+        android:name="com.abdullrahman.ecommerce.presentation.product.ProductItemFragment"
+        android:label="ProductItemFragment" >
+        <action
+            android:id="@+id/action_productItemFragment_to_buttomNavFragment2"
+            app:destination="@id/buttomNavFragment"
+            app:popUpTo="@id/buttomNavFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/productItemsListFragment"
+        android:name="com.abdullrahman.ecommerce.presentation.product.ProductItemsListFragment"
+        android:label="ProductItemsListFragment" >
+        <action
+            android:id="@+id/action_productItemsListFragment_to_productItemFragment"
+            app:destination="@id/productItemFragment" />
+        <action
+            android:id="@+id/action_productItemsListFragment_to_buttomNavFragment"
+            app:destination="@id/buttomNavFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.abdullrahman.ecommerce.presentation.search.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_buttomNavFragment"
+            app:destination="@id/buttomNavFragment" />
     </fragment>
 </navigation>

@@ -1,4 +1,4 @@
-package com.abdullrahman.ecommerce.viewPager
+package com.abdullrahman.ecommerce.presentation.viewPager
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
